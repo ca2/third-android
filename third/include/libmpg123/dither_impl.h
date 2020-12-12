@@ -85,7 +85,7 @@ static void highpass_tpdf_noise(float *table, size_t count)
 		input_noise = rand_xorshift32(&seed) + rand_xorshift32(&seed);
 
 		/* apply 8th order Chebyshev high-pass IIR filter */
-		/* Coefficients are from http://www-users.cs.york.ac.uk/~fisher/mkfilter/trad.html
+		/* Coefficients are from http://www-users.pcreatestruct->m_createstruct.york.ac.uk/~fisher/mkfilter/trad.html
 		   Given parameters are: Chebyshev, Highpass, ripple=-1, order=8, samplerate=44100, corner1=19000 */
 		xv[0] = xv[1]; xv[1] = xv[2]; xv[2] = xv[3]; xv[3] = xv[4]; xv[4] = xv[5]; xv[5] = xv[6]; xv[6] = xv[7]; xv[7] = xv[8]; 
 		xv[8] = (float) (input_noise / 1.382814179e+07);
