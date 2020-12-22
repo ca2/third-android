@@ -209,7 +209,7 @@ typedef struct tagRGBTRIPLE {
 #pragma pack()
 #endif // WIN32
 
-#if !defined(ANDROID)
+//#if !defined(ANDROID)
 
 typedef struct tagBITMAPINFOHEADER{
   DWORD biSize;
@@ -225,16 +225,16 @@ typedef struct tagBITMAPINFOHEADER{
   DWORD biClrImportant;
 } BITMAPINFOHEADER, *PBITMAPINFOHEADER; 
 
-#endif
+//#endif
 
-#if !defined(ANDROID)
+//#if !defined(ANDROID)
 
 typedef struct tagBITMAPINFO { 
   BITMAPINFOHEADER bmiHeader; 
   RGBQUAD          bmiColors[1];
 } BITMAPINFO, *PBITMAPINFO;
 
-#endif
+//#endif
 
 #endif // _WINDOWS_
 
