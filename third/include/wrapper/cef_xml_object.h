@@ -130,7 +130,7 @@ class CefXmlObject : public base::RefCountedThreadSafe<CefXmlObject> {
   // been added as the child on another object.
   ///
   bool HasParent();
-  CefRefPtr<CefXmlObject> GetParent();
+  CefRefPtr<CefXmlObject> get_parent();
 
   ///
   // Access the object's value. An object cannot have a value if it also has
