@@ -479,7 +479,7 @@ struct rdp_primary_update
 	pMultiOpaqueRect MultiOpaqueRect;     /* 24 */
 	pMultiDrawNineGrid MultiDrawNineGrid; /* 25 */
 	pLineTo LineTo;                       /* 26 */
-	pPolyline Polyline;                   /* 27 */
+	pPolyline polyline;                   /* 27 */
 	pMemBlt MemBlt;                       /* 28 */
 	pMem3Blt Mem3Blt;                     /* 29 */
 	pSaveBitmap SaveBitmap;               /* 30 */
