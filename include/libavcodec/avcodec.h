@@ -1373,7 +1373,7 @@ enum AVPacketSideDataType {
      * packet into smaller packets on macroblock edges (e.g. as for RFC 2190).
      * That is, it does not necessarily contain info about all macroblocks,
      * as long as the distance between macroblocks in the info is smaller
-     * than the target payload size.
+     * than the target ::payload size.
      * Each MB info structure is 12 bytes, and is laid out as follows:
      * @code
      * u32le bit offset from the start of the packet
@@ -2777,7 +2777,7 @@ typedef struct AVCodecContext {
 #if FF_API_PRIVATE_OPT
     /** @deprecated use encoder private options instead */
     attribute_deprecated
-    int rtp_payload_size;   /* The size of the RTP payload: the coder will  */
+    int rtp_payload_size;   /* The size of the RTP ::payload: the coder will  */
                             /* do its best to deliver a chunk with size     */
                             /* below rtp_payload_size, the chunk will start */
                             /* with a start code on some codecs like H.263. */
@@ -4340,11 +4340,11 @@ void av_packet_free(AVPacket **pkt);
 void av_init_packet(AVPacket *pkt);
 
 /**
- * Allocate the payload of a packet and initialize its fields with
+ * Allocate the ::payload of a packet and initialize its fields with
  * default values.
  *
  * @param pkt packet
- * @param size wanted payload size
+ * @param size wanted ::payload size
  * @return 0 if OK, AVERROR_xxx otherwise
  */
 int av_new_packet(AVPacket *pkt, int size);

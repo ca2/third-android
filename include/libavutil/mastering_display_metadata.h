@@ -29,7 +29,7 @@
  * Mastering display metadata capable of representing the color volume of
  * the display used to master the content (SMPTE 2086:2014).
  *
- * To be used as payload of a AVFrameSideData or AVPacketSideData with the
+ * To be used as ::payload of a AVFrameSideData or AVPacketSideData with the
  * appropriate type.
  *
  * @note The struct should be allocated with av_mastering_display_metadata_alloc()

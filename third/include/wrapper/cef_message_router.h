@@ -121,7 +121,7 @@
 // provided Handler instances when implementing different behaviors on a per-
 // browser basis.
 //
-// This implementation places no formatting restrictions on payload content.
+// This implementation places no formatting restrictions on ::payload content.
 // An application may choose to exchange anything from simple formatted
 // strings to serialized XML or JSON data.
 //

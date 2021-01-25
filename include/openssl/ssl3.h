@@ -133,7 +133,7 @@ extern "C" {
   * actually true. Point is that malloc has to return at least 64-bit aligned
   * pointers, meaning that allocating 5 bytes wastes 3 bytes in either case.
   * Suggested pre-gaping simply moves these wasted bytes from the end of
-  * allocated region to its front, but makes data payload aligned, which
+  * allocated region to its front, but makes data ::payload aligned, which
   * improves performance:-)
   */
 #  define SSL3_ALIGN_PAYLOAD                     8

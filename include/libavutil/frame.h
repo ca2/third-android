@@ -111,7 +111,7 @@ enum AVFrameSideDataType {
      */
     AV_FRAME_DATA_AUDIO_SERVICE_TYPE,
     /**
-     * Mastering display metadata associated with a video frame. The payload is
+     * Mastering display metadata associated with a video frame. The ::payload is
      * an AVMasteringDisplayMetadata type and contains information about the
      * mastering display color volume.
      */

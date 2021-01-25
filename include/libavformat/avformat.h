@@ -408,12 +408,12 @@ struct AVDeviceCapabilitiesQuery;
 
 
 /**
- * Allocate and read the payload of a packet and initialize its
+ * Allocate and read the ::payload of a packet and initialize its
  * fields with default values.
  *
  * @param s    associated IO context
  * @param pkt packet
- * @param size desired payload size
+ * @param size desired ::payload size
  * @return >0 (read size) if OK, AVERROR_xxx otherwise
  */
 int av_get_packet(AVIOContext *s, AVPacket *pkt, int size);
@@ -1441,7 +1441,7 @@ typedef struct AVFormatContext {
  * This flag is mainly intended for testing.
  */
 #define AVFMT_FLAG_BITEXACT         0x0400
-#define AVFMT_FLAG_MP4A_LATM    0x8000 ///< Enable RTP MP4A-LATM payload
+#define AVFMT_FLAG_MP4A_LATM    0x8000 ///< Enable RTP MP4A-LATM ::payload
 #define AVFMT_FLAG_SORT_DTS    0x10000 ///< try to interleave outputted packets by dts (using this flag can slow demuxing down)
 #define AVFMT_FLAG_PRIV_OPT    0x20000 ///< Enable use of private options by delaying codec open (this could be made default once all code is converted)
 #define AVFMT_FLAG_KEEP_SIDE_DATA 0x40000 ///< Don't merge side data but keep it separate.
@@ -2599,7 +2599,7 @@ void av_hex_dump_log(void *avcl, int level, const uint8_t *buf, int size);
  *
  * @param f The file stream pointer where the dump should be sent to.
  * @param pkt packet to dump
- * @param dump_payload True if the payload must be displayed, too.
+ * @param dump_payload True if the ::payload must be displayed, too.
  * @param st AVStream that the packet belongs to
  */
 void av_pkt_dump2(FILE *f, const AVPacket *pkt, int dump_payload, const AVStream *st);
@@ -2613,7 +2613,7 @@ void av_pkt_dump2(FILE *f, const AVPacket *pkt, int dump_payload, const AVStream
  * @param level The importance level of the message, lower values signifying
  * higher importance.
  * @param pkt packet to dump
- * @param dump_payload True if the payload must be displayed, too.
+ * @param dump_payload True if the ::payload must be displayed, too.
  * @param st AVStream that the packet belongs to
  */
 void av_pkt_dump_log2(void *avcl, int level, const AVPacket *pkt, int dump_payload,
@@ -2745,7 +2745,7 @@ int av_filename_number_test(const char *filename);
  * Generate an SDP for an RTP session.
  *
  * Note, this overwrites the id values of AVStreams in the muxer contexts
- * for getting unique dynamic payload types.
+ * for getting unique dynamic ::payload types.
  *
  * @param ac array of AVFormatContexts describing the RTP streams. If the
  *           array is composed by only one context, such context can contain

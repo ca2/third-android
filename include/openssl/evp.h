@@ -296,7 +296,7 @@ int (*EVP_CIPHER_meth_get_ctrl(const EVP_CIPHER *cipher))(EVP_CIPHER_CTX *,
 # define         EVP_CTRL_CCM_SET_L              0x14
 # define         EVP_CTRL_CCM_SET_MSGLEN         0x15
 /*
- * AEAD cipher deduces payload length and returns number of bytes required to
+ * AEAD cipher deduces ::payload length and returns number of bytes required to
  * store MAC and eventual padding. Subsequent call to EVP_Cipher even
  * appends/verifies MAC.
  */
