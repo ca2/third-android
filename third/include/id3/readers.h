@@ -28,65 +28,75 @@
 #ifndef _ID3LIB_READERS_H_
 #define _ID3LIB_READERS_H_
 
+
 #include "id3/id3lib_streams.h"
 #include "id3/reader.h"
 
+
+namespace file
+{
+
+
+  class file;
+
+
+} // namespace file
+
+
 class ID3_CPP_EXPORT ID3_IStreamReader : public ID3_Reader
 {
-  istream& _stream;
- protected:
-  istream& getReader() const { return _stream; }
- public:
-  ID3_IStreamReader(istream& reader) : _stream(reader) { ; }
-  virtual ~ID3_IStreamReader() { ; }
-  virtual void close() { ; }
+protected:
+
+
+  ::file::file * pfile;
+
+
+public:
+
+
+  ID3_IStreamReader(file::file * preader);
+  virtual ~ID3_IStreamReader();
+  virtual void close();
   
-  virtual int_type peekChar() { return _stream.peek(); }
+
+  virtual int_type peekChar();
+
     
   /** Read up to \c len chars into buf and advance the internal position
    ** accordingly.  Returns the number of characters read into buf.
    **/
-  virtual size_type readChars(char buf[], size_type len)
-  {
-    return this->readChars(reinterpret_cast<uchar *>(buf), len);
-  }
-  virtual size_type readChars(char_type buf[], size_type len)
-  {
-    _stream.read((char *)buf, len);
-    return (size_type) _stream.gcount();
-  }
+  virtual size_type readChars(char buf[], size_type len);
+  virtual size_type readChars(char_type buf[], size_type len);
 
-  virtual pos_type getBeg() { return 0; }
-  virtual pos_type getCur() { return (pos_type) _stream.tellg(); }
-  virtual pos_type getEnd() 
-  { 
-    pos_type cur = this->getCur();
-    _stream.seekg(0, ios::end);
-    pos_type end = this->getCur();
-    this->setCur(cur);
-    return end;
-  }
+
+  virtual pos_type getBeg();
+  virtual pos_type getCur();
+  virtual pos_type getEnd();
     
+
   /** Set the value of the internal position for reading.
    **/
-  virtual pos_type setCur(pos_type pos) { _stream.seekg(pos); return pos; }
+  virtual pos_type setCur(pos_type pos);
+
+
 };
+
   
 class ID3_CPP_EXPORT ID3_IFStreamReader : public ID3_IStreamReader
 {
-  ifstream& _file;
- public:
-  ID3_IFStreamReader(ifstream& reader)
-    : ID3_IStreamReader(reader), _file(reader) { ; }
-    
-  virtual void close() 
-  { 
-    _file.close();
-  }
+public:
+
+
+  ID3_IFStreamReader(::file::file * preader);
+  virtual void close();
+
+
 };
+
   
 class ID3_CPP_EXPORT ID3_MemoryReader : public ID3_Reader
 {
+ 
   const char_type* _beg;
   const char_type* _cur;
   const char_type* _end;
