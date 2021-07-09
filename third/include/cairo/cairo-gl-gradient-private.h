@@ -43,13 +43,13 @@
 
 #define GL_GLEXT_PROTOTYPES
 
-#include "cairo-cache-private.h"
-#include "cairo-device-private.h"
-#include "cairo-reference-count-private.h"
-#include "cairo-pattern-private.h"
-#include "cairo-types-private.h"
+#include <cairo/cairo-cache-private.h>
+#include <cairo/cairo-device-private.h>
+#include <cairo/cairo-reference-count-private.h>
+#include <cairo/cairo-pattern-private.h>
+#include <cairo/cairo-types-private.h>
 
-#include "cairo-gl.h"
+#include <cairo/cairo-gl.h>
 
 #if CAIRO_HAS_GLESV3_SURFACE
 #include <GLES3/gl3.h>

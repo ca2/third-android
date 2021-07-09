@@ -39,8 +39,8 @@
 #define _CAIRO_ERROR_PRIVATE_H_
 
 #include "cairo.h"
-#include "cairo-compiler-private.h"
-#include "cairo-types-private.h"
+#include <cairo/cairo-compiler-private.h>
+#include <cairo/cairo-types-private.h>
 
 #include <assert.h>
 

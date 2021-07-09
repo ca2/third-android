@@ -38,8 +38,8 @@
 #ifndef CAIRO_OS2_PRIVATE_H
 #define CAIRO_OS2_PRIVATE_H
 
-#include "cairo-os2.h"
-#include "cairoint.h"
+#include <cairo/cairo-os2.h>
+#include <cairo/cairoint.h>
 
 typedef struct _cairo_os2_surface
 {

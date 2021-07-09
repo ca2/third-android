@@ -40,8 +40,8 @@
 
 #include "test-compositor-surface.h"
 
-#include "cairo-compiler-private.h"
-#include "cairo-compositor-private.h"
+#include <cairo/cairo-compiler-private.h>
+#include <cairo/cairo-compositor-private.h>
 
 CAIRO_BEGIN_DECLS
 

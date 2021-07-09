@@ -37,8 +37,8 @@
 #ifndef CAIRO_FT_PRIVATE_H
 #define CAIRO_FT_PRIVATE_H
 
-#include "cairoint.h"
-#include "cairo-ft.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-ft.h>
 
 #if CAIRO_HAS_FT_FONT
 

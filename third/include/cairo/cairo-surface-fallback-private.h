@@ -42,7 +42,7 @@
 #ifndef CAIRO_SURFACE_FALLBACK_PRIVATE_H
 #define CAIRO_SURFACE_FALLBACK_PRIVATE_H
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 CAIRO_BEGIN_DECLS
 

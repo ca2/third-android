@@ -70,8 +70,8 @@
 #include "cairo.h"
 #include <pixman.h>
 
-#include "cairo-compiler-private.h"
-#include "cairo-error-private.h"
+#include <cairo/cairo-compiler-private.h>
+#include <cairo/cairo-error-private.h>
 
 #if CAIRO_HAS_PDF_SURFACE    || \
     CAIRO_HAS_PS_SURFACE     || \
@@ -294,11 +294,11 @@ _cairo_isalpha (int c)
     return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
 }
 
-#include "cairo-types-private.h"
-#include "cairo-cache-private.h"
-#include "cairo-reference-count-private.h"
-#include "cairo-spans-private.h"
-#include "cairo-surface-private.h"
+#include <cairo/cairo-types-private.h>
+#include <cairo/cairo-cache-private.h>
+#include <cairo/cairo-reference-count-private.h>
+#include <cairo/cairo-spans-private.h>
+#include <cairo/cairo-surface-private.h>
 
 cairo_private void
 _cairo_box_from_doubles (cairo_box_t *box,
@@ -431,7 +431,7 @@ _cairo_hash_bytes (unsigned long hash,
 #define _cairo_scaled_glyph_index(g) ((g)->hash_entry.hash)
 #define _cairo_scaled_glyph_set_index(g, i)  ((g)->hash_entry.hash = (i))
 
-#include "cairo-scaled-font-private.h"
+#include <cairo/cairo-scaled-font-private.h>
 
 struct _cairo_font_face {
     /* hash_entry must be first */
@@ -2105,11 +2105,11 @@ slim_hidden_proto (cairo_surface_write_to_png_stream);
 
 CAIRO_END_DECLS
 
-#include "cairo-mutex-private.h"
-#include "cairo-fixed-private.h"
-#include "cairo-wideint-private.h"
-#include "cairo-malloc-private.h"
-#include "cairo-hash-private.h"
+#include <cairo/cairo-mutex-private.h>
+#include <cairo/cairo-fixed-private.h>
+#include <cairo/cairo-wideint-private.h>
+#include <cairo/cairo-malloc-private.h>
+#include <cairo/cairo-hash-private.h>
 
 #if HAVE_VALGRIND
 #include <memcheck.h>

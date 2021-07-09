@@ -37,14 +37,14 @@
 #ifndef CAIRO_CLIP_PRIVATE_H
 #define CAIRO_CLIP_PRIVATE_H
 
-#include "cairo-types-private.h"
+#include <cairo/cairo-types-private.h>
 
-#include "cairo-boxes-private.h"
-#include "cairo-error-private.h"
-#include "cairo-compiler-private.h"
-#include "cairo-error-private.h"
-#include "cairo-path-fixed-private.h"
-#include "cairo-reference-count-private.h"
+#include <cairo/cairo-boxes-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-compiler-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-path-fixed-private.h>
+#include <cairo/cairo-reference-count-private.h>
 
 extern const cairo_private cairo_rectangle_list_t _cairo_rectangles_nil;
 

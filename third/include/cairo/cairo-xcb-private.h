@@ -37,22 +37,22 @@
 #ifndef CAIRO_XCB_PRIVATE_H
 #define CAIRO_XCB_PRIVATE_H
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-xcb.h"
+#include <cairo/cairo-xcb.h>
 
-#include "cairo-cache-private.h"
-#include "cairo-compiler-private.h"
-#include "cairo-device-private.h"
-#include "cairo-error-private.h"
-#include "cairo-freelist-private.h"
-#include "cairo-list-private.h"
-#include "cairo-mutex-private.h"
-#include "cairo-pattern-private.h"
-#include "cairo-reference-count-private.h"
-#include "cairo-scaled-font-private.h"
-#include "cairo-spans-private.h"
-#include "cairo-surface-private.h"
+#include <cairo/cairo-cache-private.h>
+#include <cairo/cairo-compiler-private.h>
+#include <cairo/cairo-device-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-freelist-private.h>
+#include <cairo/cairo-list-private.h>
+#include <cairo/cairo-mutex-private.h>
+#include <cairo/cairo-pattern-private.h>
+#include <cairo/cairo-reference-count-private.h>
+#include <cairo/cairo-scaled-font-private.h>
+#include <cairo/cairo-spans-private.h>
+#include <cairo/cairo-surface-private.h>
 
 #include <xcb/xcb.h>
 #include <xcb/render.h>

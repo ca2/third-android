@@ -32,7 +32,7 @@
 #ifndef CAIRO_GL_DISPATCH_PRIVATE_H
 #define CAIRO_GL_DISPATCH_PRIVATE_H
 
-#include "cairo-gl-private.h"
+#include <cairo/cairo-gl-private.h>
 #include <stddef.h>
 
 typedef enum _cairo_gl_dispatch_name {

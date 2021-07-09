@@ -62,6 +62,10 @@
 
 #include "cairo.h"
 
+#ifdef WIN32
+#include <GL/glew.h>
+#endif
+
 #if CAIRO_HAS_GL_SURFACE || CAIRO_HAS_GLESV2_SURFACE || CAIRO_HAS_GLESV3_SURFACE
 
 CAIRO_BEGIN_DECLS

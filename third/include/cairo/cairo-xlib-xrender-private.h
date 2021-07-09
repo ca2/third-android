@@ -33,8 +33,8 @@
 #ifndef CAIRO_XLIB_XRENDER_PRIVATE_H
 #define CAIRO_XLIB_XRENDER_PRIVATE_H
 
-#include "cairo-features.h"
-#include "cairo-compiler-private.h"
+#include <cairo/cairo-features.h>
+#include <cairo/cairo-compiler-private.h>
 
 #include <X11/Xlib.h>
 
@@ -50,7 +50,7 @@ __attribute__((__unused__)) static void   _void_consume_free   (Display *p, XID 
 
 #if CAIRO_HAS_XLIB_XRENDER_SURFACE
 
-#include "cairo-xlib-xrender.h"
+#include <cairo/cairo-xlib-xrender.h>
 
 #include <X11/extensions/Xrender.h>
 #include <X11/extensions/renderproto.h>

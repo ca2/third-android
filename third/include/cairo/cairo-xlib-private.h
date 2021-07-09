@@ -37,17 +37,17 @@
 #ifndef CAIRO_XLIB_PRIVATE_H
 #define CAIRO_XLIB_PRIVATE_H
 
-#include "cairo-xlib-xrender-private.h"
-#include "cairo-xlib.h"
+#include <cairo/cairo-xlib-xrender-private.h>
+#include <cairo/cairo-xlib.h>
 
-#include "cairo-compiler-private.h"
-#include "cairo-device-private.h"
-#include "cairo-freelist-type-private.h"
-#include "cairo-list-private.h"
-#include "cairo-reference-count-private.h"
-#include "cairo-types-private.h"
-#include "cairo-scaled-font-private.h"
-#include "cairo-surface-private.h"
+#include <cairo/cairo-compiler-private.h>
+#include <cairo/cairo-device-private.h>
+#include <cairo/cairo-freelist-type-private.h>
+#include <cairo/cairo-list-private.h>
+#include <cairo/cairo-reference-count-private.h>
+#include <cairo/cairo-types-private.h>
+#include <cairo/cairo-scaled-font-private.h>
+#include <cairo/cairo-surface-private.h>
 
 #include <pixman.h>
 #include <string.h>

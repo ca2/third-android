@@ -37,12 +37,12 @@
 #ifndef CAIRO_RTREE_PRIVATE_H
 #define CAIRO_RTREE_PRIVATE_H
 
-#include "cairo-compiler-private.h"
-#include "cairo-error-private.h"
-#include "cairo-types-private.h"
+#include <cairo/cairo-compiler-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-types-private.h>
 
-#include "cairo-freelist-private.h"
-#include "cairo-list-inline.h"
+#include <cairo/cairo-freelist-private.h>
+#include <cairo/cairo-list-inline.h>
 
 enum {
     CAIRO_RTREE_NODE_AVAILABLE,

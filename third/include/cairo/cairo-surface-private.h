@@ -40,11 +40,11 @@
 
 #include "cairo.h"
 
-#include "cairo-types-private.h"
-#include "cairo-list-private.h"
-#include "cairo-reference-count-private.h"
-#include "cairo-clip-private.h"
-#include "cairo-surface-backend-private.h"
+#include <cairo/cairo-types-private.h>
+#include <cairo/cairo-list-private.h>
+#include <cairo/cairo-reference-count-private.h>
+#include <cairo/cairo-clip-private.h>
+#include <cairo/cairo-surface-backend-private.h>
 
 typedef void (*cairo_surface_func_t) (cairo_surface_t *);
 

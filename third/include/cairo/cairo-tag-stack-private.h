@@ -37,8 +37,8 @@
 #ifndef CAIRO_TAG_STACK_PRIVATE_H
 #define CAIRO_TAG_STACK_PRIVATE_H
 
-#include "cairo-error-private.h"
-#include "cairo-list-inline.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-list-inline.h>
 
 /* The type of a single tag */
 typedef enum {

@@ -36,7 +36,7 @@
 #ifndef CAIRO_IMAGE_INFO_PRIVATE_H
 #define CAIRO_IMAGE_INFO_PRIVATE_H
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 typedef struct _cairo_image_info {
     int		 width;

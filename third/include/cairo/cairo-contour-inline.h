@@ -36,7 +36,7 @@
 #ifndef CAIRO_CONTOUR_INLINE_H
 #define CAIRO_CONTOUR_INLINE_H
 
-#include "cairo-contour-private.h"
+#include <cairo/cairo-contour-private.h>
 
 CAIRO_BEGIN_DECLS
 

@@ -37,7 +37,7 @@
 #ifndef CAIRO_TRUETYPE_SUBSET_PRIVATE_H
 #define CAIRO_TRUETYPE_SUBSET_PRIVATE_H
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 #if CAIRO_HAS_FONT_SUBSET
 

@@ -36,8 +36,8 @@
 #ifndef CAIRO_OUTPUT_STREAM_PRIVATE_H
 #define CAIRO_OUTPUT_STREAM_PRIVATE_H
 
-#include "cairo-compiler-private.h"
-#include "cairo-types-private.h"
+#include <cairo/cairo-compiler-private.h>
+#include <cairo/cairo-types-private.h>
 
 #include <stdlib.h>
 #include <stdio.h>

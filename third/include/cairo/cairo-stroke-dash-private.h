@@ -39,7 +39,7 @@
 #ifndef CAIRO_STROKE_DASH_PRIVATE_H
 #define CAIRO_STROKE_DASH_PRIVATE_H
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 CAIRO_BEGIN_DECLS
 

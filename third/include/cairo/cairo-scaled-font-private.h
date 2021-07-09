@@ -40,10 +40,10 @@
 
 #include "cairo.h"
 
-#include "cairo-types-private.h"
-#include "cairo-list-private.h"
-#include "cairo-mutex-type-private.h"
-#include "cairo-reference-count-private.h"
+#include <cairo/cairo-types-private.h>
+#include <cairo/cairo-list-private.h>
+#include <cairo/cairo-mutex-type-private.h>
+#include <cairo/cairo-reference-count-private.h>
 
 CAIRO_BEGIN_DECLS
 

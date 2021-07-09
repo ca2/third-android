@@ -38,7 +38,7 @@
 
 #include "cairo.h"
 
-#include "cairo-surface-private.h"
+#include <cairo/cairo-surface-private.h>
 
 typedef struct _cairo_paginated_surface {
     cairo_surface_t base;
