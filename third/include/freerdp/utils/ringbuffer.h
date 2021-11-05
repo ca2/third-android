@@ -1,4 +1,4 @@
-/**
+﻿/**
  * FreeRDP: A Remote Desktop Protocol Implementation
  *
  * Copyright 2014 Thincast Technologies GmbH

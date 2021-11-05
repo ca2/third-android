@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright © 2010 Joonas Pihlaja
  *
  * Permission to use, copy, modify, distribute, and sell this software and its

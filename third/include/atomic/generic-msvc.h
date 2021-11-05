@@ -1,4 +1,4 @@
-#ifndef ATOMIC_MSC_INCLUDED
+﻿#ifndef ATOMIC_MSC_INCLUDED
 #define ATOMIC_MSC_INCLUDED
 
 /* Copyright (c) 2006, 2014, Oracle and/or its affiliates. All rights reserved.

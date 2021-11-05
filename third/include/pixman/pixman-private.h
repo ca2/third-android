@@ -1,4 +1,4 @@
-#ifndef PIXMAN_PRIVATE_H
+﻿#ifndef PIXMAN_PRIVATE_H
 #define PIXMAN_PRIVATE_H
 
 /*

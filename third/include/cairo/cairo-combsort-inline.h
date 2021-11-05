@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright © 2008 Chris Wilson
  *
  * This library is free software; you can redistribute it and/or

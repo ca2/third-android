@@ -1,4 +1,4 @@
-/* resolver.h
+﻿/* resolver.h
  * strophe XMPP client library -- DNS resolver
  *
  * Copyright (C) 2015 Dmitry Podgorny <pasis.ua@gmail.com>

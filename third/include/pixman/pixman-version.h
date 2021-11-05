@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright © 2008 Red Hat, Inc.
  *
  * Permission is hereby granted, free of charge, to any person

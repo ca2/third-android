@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 
 #ifndef HAVE_ARPA_NAMESER_COMPAT_H

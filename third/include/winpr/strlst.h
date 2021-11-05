@@ -1,4 +1,4 @@
-/**
+﻿/**
  * String list Manipulation (UTILS)
  *
  * Copyright 2018 Pascal Bourguignon <pjb@informatimago.com>

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * FreeRDP: A Remote Desktop Protocol Implementation
  * ASN.1 Basic Encoding Rules (BER)
  *

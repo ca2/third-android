@@ -1,4 +1,4 @@
-#ifdef PIXMAN_FB_ACCESSORS
+﻿#ifdef PIXMAN_FB_ACCESSORS
 
 #define READ(img, ptr)							\
     (((bits_image_t *)(img))->read_func ((ptr), sizeof(*(ptr))))

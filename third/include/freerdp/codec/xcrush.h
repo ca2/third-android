@@ -1,4 +1,4 @@
-/**
+﻿/**
  * FreeRDP: A Remote Desktop Protocol Implementation
  * XCrush (RDP6.1) Bulk Data Compression
  *

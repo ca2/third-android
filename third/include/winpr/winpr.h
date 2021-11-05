@@ -1,4 +1,4 @@
-/**
+﻿/**
  * WinPR: Windows Portable Runtime
  *
  * Copyright 2012 Marc-Andre Moreau <marcandre.moreau@gmail.com>
