@@ -1,4 +1,4 @@
-﻿/*-
+/*-
  * Free/Libre Near Field Communication (NFC) library
  *
  * Libnfc historical contributors:
