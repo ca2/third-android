@@ -1,4 +1,4 @@
-/**
+﻿/**
  * WinPR: Windows Portable Runtime
  * Command-Line Utils
  *

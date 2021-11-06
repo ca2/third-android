@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Copyright © 2014 Thincast Technologies GmbH
  * Copyright © 2014 Hardening <contact@hardening-consulting.com>
  *

@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright © 2010 Nokia Corporation
  *
  * Permission is hereby granted, free of charge, to any person obtaining a

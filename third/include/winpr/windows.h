@@ -1,4 +1,4 @@
-/**
+﻿/**
  * WinPR: Windows Portable Runtime
  * Windows Header Include Wrapper
  *

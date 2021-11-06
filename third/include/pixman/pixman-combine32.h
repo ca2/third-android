@@ -1,4 +1,4 @@
-#define COMPONENT_SIZE 8
+﻿#define COMPONENT_SIZE 8
 #define MASK 0xff
 #define ONE_HALF 0x80
 

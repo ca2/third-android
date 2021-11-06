@@ -1,4 +1,4 @@
-/* cairo - a vector graphics library with display and print output
+﻿/* cairo - a vector graphics library with display and print output
  *
  * Copyright © 2000 Keith Packard
  * Copyright © 2005 Red Hat, Inc

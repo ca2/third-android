@@ -1,4 +1,4 @@
-#ifndef ATOMIC_SOLARIS_INCLUDED
+﻿#ifndef ATOMIC_SOLARIS_INCLUDED
 #define ATOMIC_SOLARIS_INCLUDED
 
 /* Copyright (c) 2008, 2014, Oracle and/or its affiliates. All rights reserved.
