@@ -1,4 +1,4 @@
-﻿#ifndef GCC_SYNC_INCLUDED
+#ifndef GCC_SYNC_INCLUDED
 #define GCC_SYNC_INCLUDED
 
 /* Copyright (c) 2008, 2016, Oracle and/or its affiliates. All rights reserved.

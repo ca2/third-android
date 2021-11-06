@@ -1,4 +1,4 @@
-﻿/**
+/**
  * WinPR: Windows Portable Runtime
  * Network Data Representation (NDR)
  *

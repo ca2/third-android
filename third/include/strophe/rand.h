@@ -1,4 +1,4 @@
-﻿/* rand.h
+/* rand.h
  * strophe XMPP client library -- pseudo-random number generator
  *
  * Copyright (C) 2014 Dmitry Podgorny <pasis.ua@gmail.com>

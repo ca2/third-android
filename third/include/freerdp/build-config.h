@@ -1,4 +1,4 @@
-﻿#ifndef FREERDP_BUILD_CONFIG_H
+#ifndef FREERDP_BUILD_CONFIG_H
 #define FREERDP_BUILD_CONFIG_H
 
 #define FREERDP_DATA_PATH "$HOME/application/rdp/data"

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * WinPR: Windows Portable Runtime
  * ASN.1 Encoding & Decoding Engine
  *

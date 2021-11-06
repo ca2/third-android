@@ -1,4 +1,4 @@
-﻿/*
+/*
  * VDA HW acceleration
  *
  * copyright (c) 2011 Sebastien Zwickert

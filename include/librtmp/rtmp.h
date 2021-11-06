@@ -1,4 +1,4 @@
-﻿#ifndef __RTMP_H__
+#ifndef __RTMP_H__
 #define __RTMP_H__
 /*
  *      Copyright (C) 2005-2008 Team XBMC

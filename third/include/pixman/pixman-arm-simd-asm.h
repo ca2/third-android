@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright © 2012 Raspberry Pi Foundation
  * Copyright © 2012 RISC OS Open Ltd
  *

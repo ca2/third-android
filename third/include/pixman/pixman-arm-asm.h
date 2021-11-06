@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright © 2008 Mozilla Corporation
  * Copyright © 2010 Nokia Corporation
  *

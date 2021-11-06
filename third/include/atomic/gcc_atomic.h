@@ -1,4 +1,4 @@
-﻿#ifndef GCC_ATOMIC_INCLUDED
+#ifndef GCC_ATOMIC_INCLUDED
 #define GCC_ATOMIC_INCLUDED
 
 /* Copyright (c) 2016, Oracle and/or its affiliates. All rights reserved.

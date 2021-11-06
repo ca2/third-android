@@ -1,4 +1,4 @@
-﻿/* Pixman uses some non-standard compiler features. This file ensures
+/* Pixman uses some non-standard compiler features. This file ensures
  * they exist
  *
  * The features are:
