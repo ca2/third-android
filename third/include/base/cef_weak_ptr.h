@@ -79,12 +79,12 @@
 // pointer would be racey.
 //
 // To ensure correct use, the first time a WeakPtr issued by a WeakPtrFactory
-// is dereferenced, the factory and its WeakPtrs become bound to the calling
+// is dereferenced, the factory_item and its WeakPtrs become bound to the calling
 // thread, and cannot be dereferenced or invalidated on any other thread. Bound
 // WeakPtrs can still be handed off to other threads, e.g. to use to post tasks
 // back to object on the bound thread.
 //
-// If all WeakPtr objects are destroyed or invalidated then the factory is
+// If all WeakPtr objects are destroyed or invalidated then the factory_item is
 // unbound from the SequencedTaskRunner/Thread. The WeakPtrFactory may then be
 // destroyed, or new WeakPtr objects may be used, from a different sequence.
 //

@@ -75,8 +75,8 @@ typedef struct _cef_resolve_callback_t {
 ///
 // A request context provides request handling for a set of related browser or
 // URL request objects. A request context can be specified when creating a new
-// browser via the cef_browser_host_t static factory functions or when creating
-// a new URL request via the cef_urlrequest_t static factory functions. Browser
+// browser via the cef_browser_host_t static factory_item functions or when creating
+// a new URL request via the cef_urlrequest_t static factory_item functions. Browser
 // objects with different request contexts will never be hosted in the same
 // render process. Browser objects with the same request context may or may not
 // be hosted in the same render process depending on the process model. Browser
@@ -85,7 +85,7 @@ typedef struct _cef_resolve_callback_t {
 // context as the source browser. When running in single-process mode there is
 // only a single render process (the main process) and so all browsers created
 // in single-process mode will share the same request context. This will be the
-// first request context passed into a cef_browser_host_t static factory
+// first request context passed into a cef_browser_host_t static factory_item
 // function and all other request context objects will be ignored.
 ///
 typedef struct _cef_request_context_t {
@@ -142,15 +142,15 @@ typedef struct _cef_request_context_t {
       struct _cef_completion_callback_t* callback);
 
   ///
-  // Register a scheme handler factory for the specified |scheme_name| and
+  // Register a scheme handler factory_item for the specified |scheme_name| and
   // optional |domain_name|. An NULL |domain_name| value for a standard scheme
-  // will cause the factory to match all domain names. The |domain_name| value
+  // will cause the factory_item to match all domain names. The |domain_name| value
   // will be ignored for non-standard schemes. If |scheme_name| is a built-in
-  // scheme and no handler is returned by |factory| then the built-in scheme
-  // handler factory will be called. If |scheme_name| is a custom scheme then
+  // scheme and no handler is returned by |factory_item| then the built-in scheme
+  // handler factory_item will be called. If |scheme_name| is a custom scheme then
   // you must also implement the cef_app_t::on_register_custom_schemes()
   // function in all processes. This function may be called multiple times to
-  // change or remove the factory that matches the specified |scheme_name| and
+  // change or remove the factory_item that matches the specified |scheme_name| and
   // optional |domain_name|. Returns false (0) if an error occurs. This function
   // may be called on any thread in the browser process.
   ///
@@ -158,7 +158,7 @@ typedef struct _cef_request_context_t {
       struct _cef_request_context_t* self,
       const cef_string_t* scheme_name,
       const cef_string_t* domain_name,
-      struct _cef_scheme_handler_factory_t* factory);
+      struct _cef_scheme_handler_factory_t* factory_item);
 
   ///
   // Clear all registered scheme handler factories. Returns false (0) on error.

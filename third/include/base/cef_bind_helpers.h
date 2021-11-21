@@ -28,7 +28,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-// This defines a set of argument wrappers and related factory methods that
+// This defines a set of argument wrappers and related factory_item methods that
 // can be used specify the refcounting and reference semantics of arguments
 // that are bound by the Bind() function in base/bind.h.
 //
