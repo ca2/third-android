@@ -36,7 +36,7 @@
 #include "include/internal/cef_string_list.h"
 #include "include/internal/cef_time.h"
 
-// Bring in platform-specific definitions.
+// Bring in operating-system-specific definitions.
 #if defined(OS_WIN)
 #include "include/internal/cef_types_win.h"
 #elif defined(OS_MACOSX)
@@ -224,7 +224,7 @@ typedef struct _cef_settings_t {
 
   ///
   // The location where user data such as spell checking dictionary files will
-  // be stored on disk. If empty then the default platform-specific user data
+  // be stored on disk. If empty then the default operating-system-specific user data
   // directory will be used ("~/.cef_user_data" directory on Linux,
   // "~/Library/Application Support/CEF/User Data" directory on Mac OS X,
   // "Local Settings\Application Data\CEF\User Data" directory under the user

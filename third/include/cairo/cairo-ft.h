@@ -41,7 +41,7 @@
 
 #if CAIRO_HAS_FT_FONT
 
-/* Fontconfig/Freetype platform-specific font interface */
+/* Fontconfig/Freetype operating-system-specific font interface */
 
 #include <ft2build.h>
 #include FT_FREETYPE_H

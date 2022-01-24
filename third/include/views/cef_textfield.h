@@ -43,7 +43,7 @@
 
 ///
 // A Textfield supports editing of text. This control is custom rendered with no
-// platform-specific code. Methods must be called on the browser process UI
+// operating-system-specific code. Methods must be called on the browser process UI
 // thread unless otherwise indicated.
 ///
 /*--cef(source=library)--*/

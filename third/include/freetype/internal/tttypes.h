@@ -201,10 +201,10 @@ FT_BEGIN_HEADER
    *     The ID of the name's encoding platform.
    *
    *   encodingID ::
-   *     The platform-specific ID for the name's encoding.
+   *     The operating-system-specific ID for the name's encoding.
    *
    *   languageID ::
-   *     The platform-specific ID for the name's language.
+   *     The operating-system-specific ID for the name's language.
    *
    *   nameID ::
    *     The ID specifying what kind of name this is.

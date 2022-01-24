@@ -827,7 +827,7 @@ FT_BEGIN_HEADER
    *     emulated for other formats.
    *
    *   encoding_id ::
-   *     A platform-specific encoding number.  This also comes from the
+   *     A operating-system-specific encoding number.  This also comes from the
    *     TrueType specification and gets emulated similarly.
    */
   typedef struct  FT_CharMapRec_

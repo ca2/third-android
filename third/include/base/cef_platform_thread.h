@@ -29,7 +29,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // WARNING: You should *NOT* be using this class directly.  PlatformThread is
-// the low-level platform-specific abstraction to the OS's threading interface.
+// the low-level operating-system-specific abstraction to the OS's threading interface.
 // You should instead be using a message-loop driven Thread, see thread.h.
 
 #ifndef CEF_INCLUDE_BASE_PLATFORM_THREAD_H_

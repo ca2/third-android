@@ -191,7 +191,7 @@ CEF_EXPORT void cef_is_web_plugin_unstable(
 // Register the Widevine CDM plugin.
 //
 // The client application is responsible for downloading an appropriate
-// platform-specific CDM binary distribution from Google, extracting the
+// operating-system-specific CDM binary distribution from Google, extracting the
 // contents, and building the required directory structure on the local machine.
 // The cef_browser_host_t::StartDownload function and CefZipArchive structure
 // can be used to implement this functionality in CEF. Contact Google via

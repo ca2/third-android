@@ -45,7 +45,7 @@
 namespace base {
 namespace cef_internal {
 
-// This class implements the underlying platform-specific spin-lock mechanism
+// This class implements the underlying operating-system-specific spin-lock mechanism
 // used for the Lock class.  Most users should not use LockImpl directly, but
 // should instead use Lock.
 class LockImpl {

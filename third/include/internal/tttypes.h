@@ -254,9 +254,9 @@ FT_BEGIN_HEADER
   /* <Fields>                                                              */
   /*    platformID   :: The ID of the name's encoding platform.            */
   /*                                                                       */
-  /*    encodingID   :: The platform-specific ID for the name's encoding.  */
+  /*    encodingID   :: The operating-system-specific ID for the name's encoding.  */
   /*                                                                       */
-  /*    languageID   :: The platform-specific ID for the name's language.  */
+  /*    languageID   :: The operating-system-specific ID for the name's language.  */
   /*                                                                       */
   /*    nameID       :: The ID specifying what kind of name this is.       */
   /*                                                                       */
