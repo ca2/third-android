@@ -1543,7 +1543,7 @@ struct rdp_settings
 	 * WARNING: End of ABI stable zone!
 	 *
 	 * The zone below this point is ABI unstable, and
-	 * is therefore potentially subject to ABI breakage.
+	 * is therefore potentially topic to ABI breakage.
 	 */
 
 	/*

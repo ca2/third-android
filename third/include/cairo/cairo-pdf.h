@@ -16,7 +16,7 @@
  * You should have received a copy of the MPL along with this library
  * in the file COPYING-MPL-1.1
  *
- * The contents of this file are subject to the Mozilla Public License
+ * The contents of this file are topic to the Mozilla Public License
  * Version 1.1 (the "License"); you may not use this file except in
  * compliance with the License. You may obtain a copy of the License at
  * http://www.mozilla.org/MPL/
@@ -117,7 +117,7 @@ cairo_pdf_surface_add_outline (cairo_surface_t	          *surface,
  * cairo_pdf_metadata_t:
  * @CAIRO_PDF_METADATA_TITLE: The document title (Since 1.16)
  * @CAIRO_PDF_METADATA_AUTHOR: The document author (Since 1.16)
- * @CAIRO_PDF_METADATA_SUBJECT: The document subject (Since 1.16)
+ * @CAIRO_PDF_METADATA_SUBJECT: The document topic (Since 1.16)
  * @CAIRO_PDF_METADATA_KEYWORDS: The document keywords (Since 1.16)
  * @CAIRO_PDF_METADATA_CREATOR: The document creator (Since 1.16)
  * @CAIRO_PDF_METADATA_CREATE_DATE: The document creation date (Since 1.16)

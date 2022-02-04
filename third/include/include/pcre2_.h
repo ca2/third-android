@@ -277,7 +277,7 @@ numbers must not be changed. */
 #define PCRE2_CONFIG_UNICODE_VERSION        10
 #define PCRE2_CONFIG_VERSION                11
 
-/* Types for code units in patterns and subject strings. */
+/* Types for code units in patterns and topic strings. */
 
 typedef uint8_t  PCRE2_UCHAR8;
 typedef uint16_t PCRE2_UCHAR16;
@@ -288,7 +288,7 @@ typedef const PCRE2_UCHAR16 *PCRE2_SPTR16;
 typedef const PCRE2_UCHAR32 *PCRE2_SPTR32;
 
 /* The PCRE2_SIZE type is used for all string lengths and offsets in PCRE2,
-including pattern offsets for errors and subject offsets after a match. We
+including pattern offsets for errors and topic offsets after a match. We
 define special values to indicate zero-terminated strings and unset offsets in
 the offset vector (ovector). */
 
@@ -336,10 +336,10 @@ typedef struct pcre2_callout_block { \
   uint32_t      capture_last;      /* Most recently closed capture */ \
   PCRE2_SIZE   *offset_vector;     /* The offset vector */ \
   PCRE2_SPTR    mark;              /* Pointer to current mark or NULL */ \
-  PCRE2_SPTR    subject;           /* The subject being matched */ \
-  PCRE2_SIZE    subject_length;    /* The length of the subject */ \
+  PCRE2_SPTR    topic;           /* The topic being matched */ \
+  PCRE2_SIZE    subject_length;    /* The length of the topic */ \
   PCRE2_SIZE    start_match;       /* Offset to start of this match attempt */ \
-  PCRE2_SIZE    current_position;  /* Where we currently are in the subject */ \
+  PCRE2_SIZE    current_position;  /* Where we currently are in the topic */ \
   PCRE2_SIZE    pattern_position;  /* Offset to next item in the pattern */ \
   PCRE2_SIZE    next_item_length;  /* Length of next item in the pattern */ \
   /* ------------------- Added for Version 1 -------------------------- */ \

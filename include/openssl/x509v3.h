@@ -593,7 +593,7 @@ char *X509V3_get_string(X509V3_CTX *ctx, const char *name, const char *section);
 STACK_OF(CONF_VALUE) *X509V3_get_section(X509V3_CTX *ctx, const char *section);
 void X509V3_string_free(X509V3_CTX *ctx, char *str);
 void X509V3_section_free(X509V3_CTX *ctx, STACK_OF(CONF_VALUE) *section);
-void X509V3_set_ctx(X509V3_CTX *ctx, X509 *issuer, X509 *subject,
+void X509V3_set_ctx(X509V3_CTX *ctx, X509 *issuer, X509 *topic,
                     X509_REQ *req, X509_CRL *crl, int flags);
 
 int X509V3_add_value(const char *name, const char *value,
@@ -647,7 +647,7 @@ int X509_check_ca(X509 *x);
 int X509_check_purpose(X509 *x, int id, int ca);
 int X509_supported_extension(X509_EXTENSION *ex);
 int X509_PURPOSE_set(int *p, int purpose);
-int X509_check_issued(X509 *issuer, X509 *subject);
+int X509_check_issued(X509 *issuer, X509 *topic);
 int X509_check_akid(X509 *issuer, AUTHORITY_KEYID *akid);
 void X509_set_proxy_flag(X509 *x);
 void X509_set_proxy_pathlen(X509 *x, long l);
@@ -678,7 +678,7 @@ STACK_OF(OPENSSL_STRING) *X509_get1_ocsp(X509 *x);
 /* Flags for X509_check_* functions */
 
 /*
- * Always check subject name for host match even if subject alt names present
+ * Always check topic name for host match even if topic alt names present
  */
 # define X509_CHECK_FLAG_ALWAYS_CHECK_SUBJECT    0x1
 /* Disable wildcard matching for dnsName fields and common name. */
@@ -689,11 +689,11 @@ STACK_OF(OPENSSL_STRING) *X509_get1_ocsp(X509 *x);
 # define X509_CHECK_FLAG_MULTI_LABEL_WILDCARDS 0x8
 /* Constraint verifier subdomain patterns to match a single labels. */
 # define X509_CHECK_FLAG_SINGLE_LABEL_SUBDOMAINS 0x10
-/* Never check the subject CN */
+/* Never check the topic CN */
 # define X509_CHECK_FLAG_NEVER_CHECK_SUBJECT    0x20
 /*
  * Match reference identifiers starting with "." to any sub-domain.
- * This is a non-public flag, turned on implicitly when the subject
+ * This is a non-public flag, turned on implicitly when the topic
  * reference identity is a DNS name.
  */
 # define _X509_CHECK_FLAG_DOT_SUBDOMAINS 0x8000

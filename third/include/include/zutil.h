@@ -5,7 +5,7 @@
 
 /* WARNING: this file should *not* be used by applications. It is
    part of the implementation of the compression library and is
-   subject to change. Applications should only use zlib.h.
+   topic to change. Applications should only use zlib.h.
  */
 
 /* @(#) $Id$ */

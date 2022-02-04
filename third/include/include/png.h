@@ -45,7 +45,7 @@
  *
  * Permission is hereby granted to use, copy, modify, and distribute
  * this software, or portions hereof, for any purpose, without fee,
- * subject to the following restrictions:
+ * topic to the following restrictions:
  *
  *  1. The origin of this software must not be misrepresented; you
  *     must not claim that you wrote the original software.  If you
@@ -139,7 +139,7 @@
  * the possibility of such damage.
  *
  * Permission is hereby granted to use, copy, modify, and distribute this
- * source code, or portions hereof, for any purpose, without fee, subject
+ * source code, or portions hereof, for any purpose, without fee, topic
  * to the following restrictions:
  *
  *  1. The origin of this source code must not be misrepresented.

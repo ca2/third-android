@@ -36,7 +36,7 @@ struct rdp_certificate_data
 {
 	char* hostname;
 	UINT16 port;
-	char* subject;
+	char* topic;
 	char* issuer;
 	char* fingerprint;
 };
@@ -56,7 +56,7 @@ extern "C"
 #endif
 
 	FREERDP_API rdpCertificateData* certificate_data_new(const char* hostname, UINT16 port,
-	                                                     const char* subject, const char* issuer,
+	                                                     const char* topic, const char* issuer,
 	                                                     const char* fingerprint);
 	FREERDP_API void certificate_data_free(rdpCertificateData* certificate_data);
 	FREERDP_API rdpCertificateStore* certificate_store_new(rdpSettings* settings);
@@ -69,7 +69,7 @@ extern "C"
 	                                        rdpCertificateData* certificate_data);
 	FREERDP_API BOOL certificate_get_stored_data(rdpCertificateStore* certificate_store,
 	                                             rdpCertificateData* certificate_data,
-	                                             char** subject, char** issuer, char** fingerprint);
+	                                             char** topic, char** issuer, char** fingerprint);
 
 #ifdef __cplusplus
 }

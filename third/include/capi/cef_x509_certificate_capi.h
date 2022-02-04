@@ -48,7 +48,7 @@ extern "C" {
 #endif
 
 ///
-// Structure representing the issuer or subject field of an X.509 certificate.
+// Structure representing the issuer or topic field of an X.509 certificate.
 ///
 typedef struct _cef_x509cert_principal_t {
   ///
@@ -132,8 +132,8 @@ typedef struct _cef_x509certificate_t {
   cef_base_ref_counted_t base;
 
   ///
-  // Returns the subject of the X.509 certificate. For HTTPS server certificates
-  // this represents the web server.  The common name of the subject should
+  // Returns the topic of the X.509 certificate. For HTTPS server certificates
+  // this represents the web server.  The common name of the topic should
   // match the host name of the web server.
   ///
   struct _cef_x509cert_principal_t*(CEF_CALLBACK* get_subject)(

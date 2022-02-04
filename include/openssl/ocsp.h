@@ -182,7 +182,7 @@ int OCSP_REQ_CTX_set1_req(OCSP_REQ_CTX *rctx, OCSP_REQUEST *req);
 int OCSP_REQ_CTX_add1_header(OCSP_REQ_CTX *rctx,
                              const char *name, const char *value);
 
-OCSP_CERTID *OCSP_cert_to_id(const EVP_MD *dgst, const X509 *subject,
+OCSP_CERTID *OCSP_cert_to_id(const EVP_MD *dgst, const X509 *topic,
                              const X509 *issuer);
 
 OCSP_CERTID *OCSP_cert_id_new(const EVP_MD *dgst,

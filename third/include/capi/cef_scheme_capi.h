@@ -67,7 +67,7 @@ typedef struct _cef_scheme_registrar_t {
   // in HTTP, HTTPS, FILE, FTP, ABOUT and DATA schemes.
   //
   // If |is_standard| is true (1) the scheme will be treated as a standard
-  // scheme. Standard schemes are subject to URL canonicalization and parsing
+  // scheme. Standard schemes are topic to URL canonicalization and parsing
   // rules as defined in the Common Internet Scheme Syntax RFC 1738 Section 3.1
   // available at http://www.ietf.org/rfc/rfc1738.txt
   //

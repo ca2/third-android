@@ -12,7 +12,7 @@
 ** This header file defines the interface that the SQLite library
 ** presents to client programs.  If a C-function, structure, datatype,
 ** or constant definition does not appear in this file, then it is
-** not a published API of SQLite, is subject to change without
+** not a published API of SQLite, is topic to change without
 ** notice, and should not be referenced by programs that use SQLite.
 **
 ** Some of the definitions that are in this file are marked as
@@ -81,7 +81,7 @@ extern "C" {
 ** interfaces as either deprecated or experimental.  New applications
 ** should not use deprecated interfaces - they are supported for backwards
 ** compatibility only.  Application writers should be aware that
-** experimental interfaces are subject to change in point releases.
+** experimental interfaces are topic to change in point releases.
 **
 ** These macros used to resolve to various kinds of compiler magic that
 ** would generate warning messages when they were used.  But that
@@ -2809,7 +2809,7 @@ SQLITE_API int SQLITE_STDCALL sqlite3_set_authorizer(
 ** digits in the time are meaningless.  Future versions of SQLite
 ** might provide greater resolution on the profiler callback.  The
 ** sqlite3_profile() function is considered experimental and is
-** subject to change in future versions of SQLite.
+** topic to change in future versions of SQLite.
 */
 SQLITE_API SQLITE_DEPRECATED void *SQLITE_STDCALL sqlite3_trace(sqlite3*,
    void(*xTrace)(void*,const char*), void*);
@@ -6676,7 +6676,7 @@ SQLITE_API int SQLITE_STDCALL sqlite3_file_control(sqlite3*, const char *zDbName
 ** on how the SQLite library is compiled, this interface might not exist.
 **
 ** The details of the operation codes, their meanings, the parameters
-** they take, and what they do are all subject to change without notice.
+** they take, and what they do are all topic to change without notice.
 ** Unlike most of the SQLite API, this function is not guaranteed to
 ** operate consistently from one release to the next.
 */
@@ -6688,7 +6688,7 @@ SQLITE_API int SQLITE_CDECL sqlite3_test_control(int op, ...);
 ** These constants are the valid operation code parameters used
 ** as the first argument to [sqlite3_test_control()].
 **
-** These parameters and their meanings are subject to change
+** These parameters and their meanings are topic to change
 ** without notice.  These values are for testing purposes only.
 ** Applications should not use any of these parameters or the
 ** [sqlite3_test_control()] interface.

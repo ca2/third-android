@@ -403,7 +403,7 @@ typedef const ASN1_ITEM *ASN1_ITEM_EXP (void);
  * This determines which strings to display and which to 'dump' (hex dump of
  * content octets or DER encoding). We can only dump non character strings or
  * everything. If we don't dump 'unknown' they are interpreted as character
- * strings with 1 octet per character and are subject to the usual escaping
+ * strings with 1 octet per character and are topic to the usual escaping
  * options.
  */
 

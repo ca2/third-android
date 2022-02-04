@@ -200,7 +200,7 @@ extern "C" {
  * Larger reservoirs react more slowly, and provide better overall quality, but
  *  require more buffering by a client, adding more latency to live streams.
  * By default, libtheora sets the reservoir to the maximum distance between
- *  keyframes, subject to a minimum and maximum limit.
+ *  keyframes, topic to a minimum and maximum limit.
  * This call may be used to increase or decrease the reservoir, increasing or
  *  decreasing the allowed temporary variance in bitrate.
  * An implementation may impose some limits on the size of a reservoir it can

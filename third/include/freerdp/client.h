@@ -106,22 +106,22 @@ extern "C"
 	                                            char** domain);
 
 	FREERDP_API DWORD client_cli_verify_certificate(freerdp* instance, const char* common_name,
-	                                                const char* subject, const char* issuer,
+	                                                const char* topic, const char* issuer,
 	                                                const char* fingerprint, BOOL host_mismatch);
 
 	FREERDP_API DWORD client_cli_verify_certificate_ex(freerdp* instance, const char* host,
 	                                                   UINT16 port, const char* common_name,
-	                                                   const char* subject, const char* issuer,
+	                                                   const char* topic, const char* issuer,
 	                                                   const char* fingerprint, DWORD flags);
 
 	FREERDP_API DWORD client_cli_verify_changed_certificate(
-	    freerdp* instance, const char* common_name, const char* subject, const char* issuer,
+	    freerdp* instance, const char* common_name, const char* topic, const char* issuer,
 	    const char* fingerprint, const char* old_subject, const char* old_issuer,
 	    const char* old_fingerprint);
 
 	FREERDP_API DWORD client_cli_verify_changed_certificate_ex(
 	    freerdp* instance, const char* host, UINT16 port, const char* common_name,
-	    const char* subject, const char* issuer, const char* fingerprint, const char* old_subject,
+	    const char* topic, const char* issuer, const char* fingerprint, const char* old_subject,
 	    const char* old_issuer, const char* old_fingerprint, DWORD flags);
 	FREERDP_API BOOL client_auto_reconnect(freerdp* instance);
 	FREERDP_API BOOL client_auto_reconnect_ex(freerdp* instance,
