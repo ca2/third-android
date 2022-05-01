@@ -24,7 +24,7 @@
 #define PNGPRIV_H
 
 
-#include "platform/third_private_config.h"
+#include "operating_system/third_private_config.h"
 
 
 /* Feature Test Macros.  The following are defined here to ensure that correctly

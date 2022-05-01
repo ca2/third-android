@@ -30,7 +30,7 @@
 #ifndef IDNA_H
 # define IDNA_H
 
-#include "platform/config_debug.h"
+#include "operating_system/config_debug.h"
 
 # ifndef IDNAPI
 #  if defined LIBIDN_BUILDING && defined HAVE_VISIBILITY && HAVE_VISIBILITY

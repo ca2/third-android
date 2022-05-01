@@ -336,7 +336,7 @@ typedef struct pcre2_callout_block { \
   uint32_t      capture_last;      /* Most recently closed capture */ \
   PCRE2_SIZE   *offset_vector;     /* The offset vector */ \
   PCRE2_SPTR    mark;              /* Pointer to current mark or NULL */ \
-  PCRE2_SPTR    topic;           /* The topic being matched */ \
+  PCRE2_SPTR    subject;           /* The subject being matched */ \
   PCRE2_SIZE    subject_length;    /* The length of the topic */ \
   PCRE2_SIZE    start_match;       /* Offset to start of this match attempt */ \
   PCRE2_SIZE    current_position;  /* Where we currently are in the topic */ \
