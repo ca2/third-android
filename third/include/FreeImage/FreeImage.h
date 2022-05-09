@@ -174,7 +174,7 @@ typedef unsigned __int64 UINT64;
 #pragma pack(1)
 #endif // WIN32
 
-#if !defined(ANDROID)
+//#if !defined(ANDROID)
 
 typedef struct tagRGBQUAD {
 #if FREEIMAGE_COLORORDER == FREEIMAGE_COLORORDER_BGR
@@ -189,7 +189,7 @@ typedef struct tagRGBQUAD {
   BYTE rgbReserved;
 } RGBQUAD;
 
-#endif
+//#endif
 
 typedef struct tagRGBTRIPLE {
 #if FREEIMAGE_COLORORDER == FREEIMAGE_COLORORDER_BGR
