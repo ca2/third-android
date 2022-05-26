@@ -48,13 +48,13 @@ class ID3_CPP_EXPORT ID3_IStreamReader : public ID3_Reader
 protected:
 
 
-  ::file::file * pfile;
+  ::file::file * m_pfile;
 
 
 public:
 
 
-  ID3_IStreamReader(file::file * preader);
+  ID3_IStreamReader(file::file * pfile);
   virtual ~ID3_IStreamReader();
   virtual void close();
   

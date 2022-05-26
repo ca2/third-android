@@ -58,8 +58,9 @@ public:
 
 public:
 
-  ID3_Tag(const char *name = NULL);
+  ID3_Tag(const char *name = nullptr);
   ID3_Tag(const ID3_Tag &tag);
+  ID3_Tag(ID3_Reader* preader);
   virtual ~ID3_Tag();
 
   void       Clear();
